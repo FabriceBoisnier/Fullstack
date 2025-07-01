@@ -1,0 +1,42 @@
+services:
+  client:
+    stdin_open: true
+    tty: true
+    ports:
+      - 5173:5173
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./client
+    volumes:
+      - type: bind
+        source: ./client
+        target: /home/node
+      - type: volume
+        target: /home/node/node_modules
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./api/src
+        target: /app/src
+    ports:
+      - 3001:80
+  db:
+    image: mongo
+    volumes:
+      - type: volume
+        source: dbtest
+        target: /data/db
+  reverse-proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile.dev
+    ports:
+      - 80:80
+    depends_on:
+      - api
+      - db
+volumes:
+  dbtest:
