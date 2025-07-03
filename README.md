@@ -20,7 +20,9 @@ The template include:
 ~~- Dockerfile update for the dev time would be updated as needed~~
 
 # v0.2
+
 The template is just updated
+
 - @lias for dev
 - react router
 - zustand
@@ -31,6 +33,7 @@ The template is just updated
 - Dockerfile updated to copy your tsconfig and vite config in case...
 
 # SOON
+
 I'll update it with some new features and master on jest/react-testing to update testing path
 
 
