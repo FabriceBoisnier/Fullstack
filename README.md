@@ -19,7 +19,7 @@ The template include:
  ~~- Structure architecture for the react folders (with pages/layer/components/assets/forms/routing/services/utils)~~
  ~~- Dockerfile update for the dev time would be updated as needed~~
 
-#v0.2
+# v0.2
 The template is just updated
     - @lias for dev
     - react router
