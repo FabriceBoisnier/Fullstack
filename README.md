@@ -11,13 +11,13 @@ The template include:
                     -node with express and mongoDB connection (will be update as needed later)
 
 ~~SOON~~
- - react router
- - zustand
- - react-icons
- - sass (and a base of index / root scss already available for reset)
- - Vitest (and jest/react-testing-library for testing code and a docker/command soon to test)
- - Structure architecture for the react folders (with pages/layer/components/assets/forms/routing/services/utils)
- - Dockerfile update for the dev time would be updated as needed
+ ~~- react router~~
+ ~~- zustand~~
+ ~~- react-icons~~
+ ~~- sass (and a base of index / root scss already available for reset)~~
+ ~~- Vitest (and jest/react-testing-library for testing code and a docker/command soon to test)~~
+ ~~- Structure architecture for the react folders (with pages/layer/components/assets/forms/routing/services/utils)~~
+ ~~- Dockerfile update for the dev time would be updated as needed~~
 
 #v0.2
 The template is just updated
