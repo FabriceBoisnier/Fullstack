@@ -1,8 +1,11 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.module.scss";
 
 // Mise à jour de src/App.jsx pour tester l'API
 import { useEffect } from "react";
+// Update the import path below to the correct relative path to Test.tsx
+import Test from "@pages/Test";
+
 
 function App() {
   const [count, setCount] = useState(null);
@@ -25,6 +28,8 @@ function App() {
     <div>
       <h1>React + Vite</h1>
       <p>Compteur: {count !== null ? count : "Chargement..."}</p>
+      <Test />
+      
     </div>
   );
 }
